@@ -1,5 +1,3 @@
-
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,11 +11,10 @@ body{
   font-weight: 300;
 }
 
-hr{
-  height: 1px;
+.bottom{
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
   color: #7d97ad;
-  border: solid 1px;
-  background-color: #7d97ad;
 }
 
 .logo{
@@ -75,7 +72,6 @@ hr{
     font-size: 40px;
     margin: 30%;
     margin-top: 75%;
-
 }
 
 .main {
@@ -84,14 +80,22 @@ hr{
 }
 
 @media screen and (min-width: 767px) {
-  .centered{margin-bottom: 20px;}
+  .centered {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .centered{text-align: center; margin-bottom: 15px;}
+  .centered {
+    text-align: center; margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
 }
