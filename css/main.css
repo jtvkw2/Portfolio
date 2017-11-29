@@ -1,0 +1,97 @@
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  color: #2d3c49;
+  font-weight: 300;
+}
+
+hr{
+  height: 1px;
+  color: #7d97ad;
+  border: solid 1px;
+  background-color: #7d97ad;
+}
+
+.logo{
+  border-radius: 100px;
+}
+
+.title{
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.grayed{
+  color: #7d97ad;
+}
+
+.main-content{
+  margin-bottom: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.glyphicon {
+    font-size: 40px;
+    margin: 30%;
+    margin-top: 75%;
+
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .centered{margin-bottom: 20px;}
+}
+
+@media screen and (max-width: 767px) {
+  .centered{text-align: center; margin-bottom: 15px;}
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
