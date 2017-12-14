@@ -7,15 +7,10 @@
 
 body{
   font-family: 'Raleway', sans-serif;
-  color: #2d3c49;
   font-weight: 300;
+  background: #ffffff url('../img/Background.jpg');
 }
 
-.bottom{
-  border-bottom: 2px solid;
-  margin-bottom: 10px;
-  color: #7d97ad;
-}
 
 .logo{
   border-radius: 100px;
@@ -23,7 +18,7 @@ body{
 
 .title{
   font-weight: 100;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .grayed{
@@ -38,7 +33,7 @@ body{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #111;
@@ -98,4 +93,180 @@ body{
     .sidenav a {
       font-size: 18px;
     }
+}
+
+.button--white {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: none;
+}
+
+.button--size-m {
+    font-size: 28px;
+    height: 80px;
+    line-height: 79px;
+    padding: 0px;
+    min-width: 420px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none !important;
+    display: block;
+    color: #fff;
+    background-color: transparent;
+}
+
+*, *:after, *::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+#content-pusher .button-box {
+    max-width: 470px;
+}
+
+.button-box {
+    display: inline-block;
+    text-align: center;
+}
+
+.bottom-text{
+  font-size: 42px;
+}
+
+.main-cta {
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    cursor: default;
+    color: #fff;
+}
+
+.spacer{
+  max-width: 100px
+}
+
+.top{
+  position: relative;
+
+}
+
+.middle{
+  position: relative;
+  background: #fff;
+  padding: 0;
+}
+
+.bottom{
+  text-align: center;
+  padding: 0 0 4em;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 50%;
+}
+
+#projects {
+    margin-top: 20px;
+}
+
+#projects .pr-ex {
+    display: block;
+    text-decoration: none;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.site-box {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
+    -webkit-transition: all 0.03s ease-in;
+    -o-transition: all 0.03s ease-in;
+    transition: all 0.03s ease-in;
+    -webkit-box-shadow: 0px 5px 21px 0 rgba(71, 80, 106, 0.14);
+    box-shadow: 0px 5px 21px 0 rgba(71, 80, 106, 0.14);
+}
+#projects .pr-ex .pr-ex-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
+    -webkit-mask-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFW…9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+#projects .pr-ex .pr-ex-desc {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    padding: 23px 24px;
+    background-color: #fff;
+    line-height: 21px;
+}
+
+#projects .pr-ex .pr-ex-desc .pr-ex-name {
+    display: block;
+    float: left;
+    width: 80%;
+    color: #352c2d;
+    font-size: 21px;
+}
+
+#projects .pr-ex .pr-ex-desc .pr-ex-year {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: right;
+    color: #97a9b6;
 }
