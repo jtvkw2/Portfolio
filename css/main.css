@@ -132,6 +132,14 @@ body{
     box-sizing: border-box;
 }
 
+.button:hover{
+  background-color: #fff;
+}
+
+.button:hover .button--white{
+  color: black;
+}
+
 .link {
     text-decoration: none !important;
     display: block;
@@ -142,10 +150,6 @@ body{
 *, *:after, *::before {
     box-sizing: border-box;
     outline: none;
-}
-
-#content-pusher .button-box {
-    max-width: 470px;
 }
 
 .button-box {
@@ -167,7 +171,7 @@ body{
 }
 
 .spacer{
-  max-width: 100px
+  max-width: 100px;
 }
 
 .top{
@@ -195,78 +199,38 @@ body{
     width: 50%;
 }
 
-#projects {
-    margin-top: 20px;
+
+.portfolio{
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio:hover{
+  color: gray;
+  opacity: 0.7;
 }
 
-#projects .pr-ex {
-    display: block;
-    text-decoration: none;
-    height: 360px;
-    overflow: hidden;
-    position: relative;
-    background-color: #fff;
-    cursor: pointer;
-    margin-bottom: 30px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+.portfolio:hover .over-text{
+  opacity: 0
+}
+.portfolio:after {
+  content: "";
+  display: block;
 }
 
-.site-box {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    overflow: hidden;
-    -webkit-transition: all 0.03s ease-in;
-    -o-transition: all 0.03s ease-in;
-    transition: all 0.03s ease-in;
-    -webkit-box-shadow: 0px 5px 21px 0 rgba(71, 80, 106, 0.14);
-    box-shadow: 0px 5px 21px 0 rgba(71, 80, 106, 0.14);
-}
-#projects .pr-ex .pr-ex-img {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    overflow: hidden;
-    -webkit-mask-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFW…9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+.over-text{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 15px;
 }
 
-#projects .pr-ex .pr-ex-desc {
-    width: 100%;
-    height: auto;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    padding: 23px 24px;
-    background-color: #fff;
-    line-height: 21px;
-}
-
-#projects .pr-ex .pr-ex-desc .pr-ex-name {
-    display: block;
-    float: left;
-    width: 80%;
-    color: #352c2d;
-    font-size: 21px;
-}
-
-#projects .pr-ex .pr-ex-desc .pr-ex-year {
-    display: block;
-    float: left;
-    width: 20%;
-    text-align: right;
-    color: #97a9b6;
+.rounded{
+  border-radius: 15px;
 }
