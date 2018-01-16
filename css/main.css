@@ -78,11 +78,20 @@ body{
   .centered {
     margin-bottom: 20px;
   }
+
+  .button--size-m {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .centered {
-    text-align: center; margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .button--size-m {
+    font-size: 20px;
   }
 }
 
@@ -92,6 +101,10 @@ body{
     }
     .sidenav a {
       font-size: 18px;
+    }
+
+    .button--size-m {
+      font-size: 15px;
     }
 }
 
@@ -106,7 +119,6 @@ body{
     height: 80px;
     line-height: 79px;
     padding: 0px;
-    min-width: 420px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -152,17 +164,13 @@ body{
     outline: none;
 }
 
-.button-box {
-    display: inline-block;
-    text-align: center;
-}
-
 .bottom-text{
   font-size: 42px;
 }
 
 .main-cta {
-    line-height: 50px;
+    
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 30px;
