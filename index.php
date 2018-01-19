@@ -14,6 +14,8 @@
         if ($human == '4') {
             if (mail ($to, $subject, $body, $from)) {
 	        echo '<p>Your message has been sent!</p>';
+          header('Location: contact.html');
+          exit();
 	    } else {
 	        echo '<p>Something went wrong, go back and try again!</p>';
 	    }
