@@ -8,7 +8,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  background: #C0C0C0;
+  background: #d6d6d6
 }
 
 
@@ -178,6 +178,15 @@ body{
     color: #fff;
 }
 
+.bottom-cta {
+
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
 .spacer{
   max-width: 100px;
 }
@@ -289,4 +298,40 @@ body{
 .imgModal{
   height: 400px;
   width: 800px;
+}
+
+.icon{
+  width : 64px;
+  height: 64px;
+}
+
+.main-text{
+  font-size: 20px;
+}
+
+.progress {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 4px;
+    height: auto;
+    background: #e0e0e0;
+    margin-bottom: 24px;
+}
+
+.progress .bar {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #dd6e46;
+    height: 28px;
+}
+
+.progress-info .bar, .progress .bar-info {
+    background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#339bb9));
+    background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
+    background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
+    background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
+    background-repeat: repeat-x;
 }
