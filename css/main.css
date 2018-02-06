@@ -305,6 +305,11 @@ body{
   height: 64px;
 }
 
+.smallIcon{
+  width: 45px;
+  height: 45px;
+}
+
 .main-text{
   font-size: 20px;
 }
@@ -334,4 +339,35 @@ body{
     background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
     background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
     background-repeat: repeat-x;
+}
+
+.social{
+      list-style: none;
+      margin-left: -8px !important;
+      margin: 0;
+}
+
+.social_li{
+      list-style: none;
+      margin: 0 8px 8px !important;
+      float: left;
+      line-height: 20px;
+      display: list-item;
+      text-align: -webkit-match-parent;
+}
+
+.row {
+      position: relative;
+  }
+
+  .bottom-align-text {
+    position: absolute;
+    bottom: 2;
+    right: 0;
+  }
+
+
+
+.bottomColor{
+  background-color: #464646;
 }
