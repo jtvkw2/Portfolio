@@ -43,12 +43,11 @@
 				</div>
 			</div>
 		</div>
+		<select data-bind="options: filters, value: filter"></select>
 		<div class = "container">
-		<div class= "popup" data-bind="template: { name: 'person-template', data: memory }" onclick = "finalPopup(0);"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: arcade }" onclick = "finalPopup(1);"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: pixel }" onclick = "finalPopup(2);"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: feed }" onclick = "finalPopup(3);"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: map }" onclick = "finalPopup(4);"></div>
+		<ul data-bind="foreach: filteredItems" style="list-style: none;">
+			<li data-bind="template: { name: 'person-template', data: $data}, click: $root.finalPopup"></li>
+		</ul>
 	</div>
 
 		<div id="myModal" class="modal">
