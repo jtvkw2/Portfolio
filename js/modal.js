@@ -18,14 +18,6 @@ window.onclick = function(event) {
     }
 }
 
-function finalPopup(popup){
-  var projects = ["memory", "arcade", "pixel", "feed", "map"];
-  console.log(projects[popup]);
-  var elem = $("<div class=\'innerModal\' data-bind=\"template: { name: \'modal\', data: "+projects[popup]+"}\"></div>");
-  $("#myModal").append(elem);
-  modal.style.display = "block";
-}
-
 function MyViewModel(data) {
    var self = this;
    self.filters = ko.observableArray(data.filters);
@@ -42,21 +34,16 @@ function MyViewModel(data) {
     }
   });
 
-
-  //function finalPopup(popup){
-    //var projects = ["memory", "arcade", "pixel", "feed", "map"];
-    //console.log(popup);
-    //var elem = $("<div class=\'innerModal\' data-bind=\"template: { name: \'modal\', data: "+projects[popup]+"}\"></div>");
-    //$("#myModal").append(elem);
-  //  modal.style.display = "block";
-  //}
-
   self.finalPopup = function(popup) {
     var name = popup["name"];
-    console.log(name);
-    var elem = $("<div class=\'innerModal\' data-bind=\"template: { name: \'modal\', data: "+name+"}\"></div>");
+    //var index = initialData.list.indexOf(name);
+    var index = initialData.list.map(function(e) { return e.name; }).indexOf(name);
+    console.log(index);
+    var elem = $("<div class=\'innerModal\' data-bind=\"template: { name: \'modal\',  data: initialData.list["+index+"]}\"></div>");
     $("#myModal").append(elem);
     modal.style.display = "block";
+    //console.log(elem[0]);
+    ko.applyBindingsToNode(elem[0]);
   }
 
 };

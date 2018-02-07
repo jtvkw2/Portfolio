@@ -45,13 +45,12 @@
 		</div>
 		<select data-bind="options: filters, value: filter"></select>
 		<div class = "container">
-		<ul data-bind="foreach: filteredItems" style="list-style: none;">
-			<li data-bind="template: { name: 'person-template', data: $data}, click: $root.finalPopup"></li>
-		</ul>
-	</div>
-
-		<div id="myModal" class="modal">
+			<ul data-bind="foreach: filteredItems" style="list-style: none;">
+				<li data-bind="template: { name: 'person-template', data: $data}, click: $root.finalPopup"></li>
+			</ul>
 		</div>
+
+		<div id="myModal" class="modal" data-bind="foreach: initialData"></div>
 
 		<script type="text/html" id="person-template">
 			<div class = "col-md-4 col-sm-6 col-xs-12">
@@ -71,11 +70,13 @@
 					<a data-bind="attr: {href: url}">View on GitHub</a>
 				</div>
 		</script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
 		<script src="js/knockout-3.4.2.js" charset="utf-8"></script>
 		<script src="js/main.js" charset="utf-8"></script>
 		<script src="js/modal.js" charset="utf-8"></script>
+
 	</body>
 
 	<footer class = "bottomColor">
