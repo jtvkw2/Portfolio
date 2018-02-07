@@ -3,17 +3,28 @@ var span = document.getElementsByClassName(".close");
 
 function closeModal(){
   modal.style.display = "none";
+  while (modal.firstChild) {
+    modal.removeChild(modal.firstChild);
+  }
+
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+      modal.style.display = "none";
+      while (modal.firstChild) {
+        modal.removeChild(modal.firstChild);
+      }
     }
 }
 
-$('.popup').click(function(e) {
+function finalPopup(popup){
+  var projects = ["memory", "arcade", "pixel", "feed", "map"];
+  console.log(projects[popup]);
+  var elem = $("<div class=\'innerModal\' data-bind=\"template: { name: \'modal\', data: "+projects[popup]+"}\"></div>");
+  $("#myModal").append(elem);
   modal.style.display = "block";
-});
+}
 
 function MyViewModel() {
          this.memory = { name: 'Memory', url: ko.observable("https://github.com/jtvkw2/Memory"), src: ko.observable("img/Memory.png"), des: "Built a complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!"};

@@ -43,16 +43,15 @@
 				</div>
 			</div>
 		</div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: memory }"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: arcade }"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: pixel }"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: feed }"></div>
-		<div class= "popup" data-bind="template: { name: 'person-template', data: map }"></div>
+		<div class = "container">
+		<div class= "popup" data-bind="template: { name: 'person-template', data: memory }" onclick = "finalPopup(0);"></div>
+		<div class= "popup" data-bind="template: { name: 'person-template', data: arcade }" onclick = "finalPopup(1);"></div>
+		<div class= "popup" data-bind="template: { name: 'person-template', data: pixel }" onclick = "finalPopup(2);"></div>
+		<div class= "popup" data-bind="template: { name: 'person-template', data: feed }" onclick = "finalPopup(3);"></div>
+		<div class= "popup" data-bind="template: { name: 'person-template', data: map }" onclick = "finalPopup(4);"></div>
+	</div>
 
 		<div id="myModal" class="modal">
-
-				<div data-bind="template: { name: 'modal', data: memory}"></div>
-
 		</div>
 
 		<script type="text/html" id="person-template">
@@ -73,10 +72,27 @@
 					<a data-bind="attr: {href: url}">View on GitHub</a>
 				</div>
 		</script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
 		<script src="js/knockout-3.4.2.js" charset="utf-8"></script>
 		<script src="js/main.js" charset="utf-8"></script>
 		<script src="js/modal.js" charset="utf-8"></script>
 	</body>
+
+	<footer class = "bottomColor">
+		<div class = "container ">
+			<div class = "row">
+				<div class = "col-md-6 col-sm-6 col-xs-6">
+					<h3 class = "bottom-cta">MY SOCIALS</h3>
+					<ul = class "social unstyled">
+						<li class = "social_li"><a href = "https://www.linkedin.com/mynetwork/"><img class="img-responsive smallIcon" src="img/link.png"></a></li>
+						<li class = "social_li"><a href = "https://github.com/jtvkw2"><img class="img-responsive smallIcon" src="img/git.svg"></a></li>
+					</ul>
+				</div>
+				<div class = "col-md-6 col-sm-6 col-xs-6 copyrightContainer">
+					<p class = "bottom-align-text bottom-cta">Jacob Voyles © 2018 </p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </html>
