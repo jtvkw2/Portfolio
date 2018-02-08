@@ -10,29 +10,36 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="index.html">About</a>
-		  <a href="Projects.html">Portfolio</a>
-		  <a href="Contact.html">Contact</a>
-		</div>
-		<div class= "head">
-			<div class="container">
-				<div class = "row">
-					<div class = "col-md-1 col-sm-1 col-xs-1">
-						<span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()"></span>
-					</div>
-					<div class= "col-md-9 col-sm-9 col-xs-9">
-					</div>
-					<div class = "col-md-2 col-sm-2 col-xs-2">
-						<img class="img-responsive logo" src="img/Profile.png" alt="Logo">
-					</div>
-				</div>
-			</div>
-		</div>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		  <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="img/Panda.png" alt="Logo"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		    <ul class="navbar-nav navbarFont">
+		     <li class="nav-item">
+		       <a class="nav-link " href="index.html">Home</a>
+		     </li>
+		     <li class="nav-item active">
+		       <a class="nav-link" href="Projects.html">Portfolio</a>
+		     </li>
+		     <li class="nav-item">
+		       <a class="nav-link" href="About.html">About</a>
+	      </li>
+				<li class="nav-item">
+					<a class="nav-link" href="Contact.html">Contact</a>
+			 </li>
+	    </ul>
+	  </div>
+	</nav>
+	<br>
 		<div class= "top">
 			<div class = "container">
 				<div class = "row">
@@ -42,7 +49,13 @@
 				</div>
 			</div>
 		</div>
-		<select data-bind="options: filters, value: filter"></select>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-12 col-sm-12 col-xs-12">
+					<select id="soflow" data-bind="options: filters, value: filter"></select>
+				</div>
+			</div>
+		</div>
 		<div class = "container">
 			<ul data-bind="foreach: filteredItems" style="list-style: none;">
 				<li data-bind="template: { name: 'person-template', data: $data}, click: $root.finalPopup"></li>

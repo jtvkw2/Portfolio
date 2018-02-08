@@ -26,7 +26,7 @@ var initialData = {
   {name:"Pitch Perfect", type: "IOS", url: ko.observable("https://github.com/jtvkw2/Pitch-Perfect"), src: ko.observable("img/Pitch.png"), des: "Built an iPhone app that records a conversation between you and a friend, and then makes your voices sound like a Chipmunk or Darth Vader."},
   {name:"MeMe", type: "IOS", url: ko.observable("https://github.com/jtvkw2/MeMe"), src: ko.observable("img/MeMe.png"), des: "Built an app that takes pictures and overlays text to make memes out of friends, family, or pets. Also allows sharing with others via social media or email."}
   ],
-  filters :["All","Web", "IOS"]
+  filters :["-- Sort --","Web", "IOS"]
 }
 
 function MyViewModel(data) {
@@ -36,7 +36,7 @@ function MyViewModel(data) {
    self.list = ko.observableArray(data.list);
    self.filteredItems = ko.computed(function() {
      var filter = self.filter();
-     if (!filter || filter == "All") {
+     if (!filter || filter == "-- Sort --") {
       return self.list();
      } else {
       return ko.utils.arrayFilter(self.list(), function(i) {
