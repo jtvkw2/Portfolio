@@ -84,29 +84,8 @@ body{
   }
 }
 
-@media screen and (max-width: 767px) {
-  .centered {
-    text-align: center;
-    margin-bottom: 15px;
-  }
 
-  .button--size-m {
-    font-size: 20px;
-  }
-}
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-    .sidenav a {
-      font-size: 18px;
-    }
-
-    .button--size-m {
-      font-size: 15px;
-    }
-}
 
 .button--white {
     color: #fff;
@@ -271,11 +250,11 @@ body{
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    max-height: calc(100% - 100px);
+    max-height: calc(100% - 10px);
     position: fixed;
       top: 50%;
-      left: 50%;
-    transform: translate(-50%, -50%);
+      left: 30%;
+    transform: translate(-20%, -50%);
 }
 
 /* The Close Button */
@@ -375,4 +354,30 @@ body{
 
 .bottomColor{
   background-color: #464646;
+}
+
+@media screen and (max-width: 450px) {
+    .button--size-m {
+      font-size: 15px;
+    }
+
+    .over-text{
+      font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .centered {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-height: 475px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
 }
