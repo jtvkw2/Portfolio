@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 	<head>
@@ -5,94 +6,83 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jacob Voyles</title>
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/panda.ico" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="js/main.js" charset="utf-8"></script>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/nav.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		  <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="img/Panda.png" alt="Logo"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-		    <ul class="navbar-nav navbarFont">
-		     <li class="nav-item">
-		       <a class="nav-link " href="index.html">Home</a>
-		     </li>
-		     <li class="nav-item">
-		       <a class="nav-link" href="Projects.html">Portfolio</a>
-		     </li>
-		     <li class="nav-item">
-		       <a class="nav-link" href="About.html">About</a>
-	      </li>
-				<li class="nav-item active">
-					<a class="nav-link" href="Contact.html">Contact</a>
-			 </li>
-	    </ul>
-	  </div>
-	</nav>
-	<br>
-	<div class = "container">
-		<div class = "row">
-			<div class = "col-md-12 col-sm-12 col-xs-12">
-					<h1 class = "main-cta title"> Contact </h1>
-			</div>
+		<nav id="navbar" class="">
+		  <div class="nav-wrapper">
+		    <div class="logo">
+		      <a href="index.html"><img src="img/Panda.png" style="height: 60px;"></a>
+		    </div>
+		    <ul id="menu">
+		      <li><a href="index.html">Home</a></li>
+					<li><a href="Projects.html">Portfolio</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="menuIcon">
+		  <span class="icon icon-bars"></span>
+		  <span class="icon icon-bars overlay"></span>
 		</div>
-		<div class = "row">
-			<div class = "col-lg-3 col-md-12 col-sm-12 col-xs-12">
-				<div class = "backBox">
-					<img src = "http://placekitten.com/g/300/300" alt="filler" style = "display: block; margin-left: auto; margin-right: auto; width: 50%;">
-					<p class = "bottom-cta" style="margin: 5px; font-size: 15px;"> Have A Question? Fill in the form to enquire.</p>
-				</div>
-			</div>
-			<div class = "col-lg-9 col-md-12  col-sm-12 col-xs-12">
-				<div class = "main-cta form">
-					<form method="post" action="index.php" class = "formStyle">
 
-				    <label>Name</label>
-				    <input name="name" placeholder="Type Here">
-
-				    <label>Email</label>
-				    <input name="email" type="email" placeholder="Type Here">
-
-				    <label>Message</label>
-				    <textarea name="message" placeholder="Type Here"></textarea>
-
-						<label>*What is 2+2? (Anti-spam)</label>
-						<input name="human" placeholder="Type Here">
-
-				    <input class= "enjoy-css" name="submit" type="submit" value="Submit">
-
+		<div class="overlay-menu">
+		  <ul id="menu">
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="Projects.html">Portfolio</a></li>
+		      <li><a href="Contact.html">Contact</a></li>
+		    </ul>
+		</div>
+		<br>
+		<h1 class = "main-cta title"> Contact </h1>
+		<div class = "backBox">
+			<p class = "bottom-cta" style="margin: 5px; font-size: 15px;"> If you are interested in my work and want to make me a proposal for collaboration, you can contact me using the form below ( fill all fields ) or with my contact information below cons . I promise to answer you as soon as possible.</p>
+		</div>
+		<div class = "main-cta form">
+			<section id="contact">
+				<div class="container">
+					<form name="htmlform" method="post" action="index.php">
+						<input name="name" placeholder="NAME">
+						<input  type="email" name="email" placeholder="MAIL">
+						<textarea name="message" placeholder="MESSAGE" ></textarea>
+						<button name="submit" type="submit" class="submit" value="Submit">SEND</button>
 					</form>
 				</div>
-			</div>
+			</section>
 		</div>
-	</div>
+
+
+
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/nav.js" charset="utf-8"></script>
 	</body>
-	<footer class = "bottomColor ">
-		<div class = "container ">
-			<div class = "row">
-				<div class = "col-md-6 col-sm-6 col-xs-6">
-					<h3 class = "bottom-cta">MY SOCIALS</h3>
-					<ul = class "social unstyled">
-						<li class = "social_li"><a href = "https://www.linkedin.com/in/jacob-voyles/"><img class="img-responsive smallIcon" src="img/link.png"></a></li>
-						<li class = "social_li"><a href = "https://github.com/jtvkw2"><img class="img-responsive smallIcon" src="img/git.svg"></a></li>
-					</ul>
-				</div>
-				<div class = "col-md-6 col-sm-6 col-xs-6 copyrightContainer">
-					<p class = "bottom-align-text bottom-cta">Jacob Voyles © 2018 </p>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div class="container-fluid navbar-fixed-bottom" id="contact-bar">
+	  <ul class="list-inline text-center">
+	    <li>
+	      <a href="mailto:jvoylesdev@gmail.com"><i class="fa fa-envelope rotate"></i></a>
+	    </li>
+	    <li>
+	      <a href="https://github.com/jtvkw2"><i class="fa fa-github"></i></a>
+	    </li>
+	    <li>
+	      <a href="https://www.linkedin.com/in/jacob-voyles/"><i class="fa fa-linkedin-square"></i></a>
+	    </li>
+			<br>
+			<span class = "text-center main-cta">Jacob Voyles © 2018 </span>
+	  </ul>
+	</div>
 </html>

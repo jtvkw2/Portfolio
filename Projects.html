@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 	<head>
@@ -5,106 +6,204 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jacob Voyles</title>
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="shortcut icon" href="img/logo.png">
+		<link rel="icon" href="img/panda.ico" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/port.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		  <a class="navbar-brand" href="index.html"><img class="img-responsive logo" src="img/Panda.png" alt="Logo"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-		    <ul class="navbar-nav navbarFont">
-		     <li class="nav-item">
-		       <a class="nav-link " href="index.html">Home</a>
-		     </li>
-		     <li class="nav-item active">
-		       <a class="nav-link" href="Projects.html">Portfolio</a>
-		     </li>
-		     <li class="nav-item">
-		       <a class="nav-link" href="About.html">About</a>
-	      </li>
-				<li class="nav-item">
-					<a class="nav-link" href="Contact.html">Contact</a>
-			 </li>
-	    </ul>
-	  </div>
-	</nav>
-	<br>
-		<div class= "top">
-			<div class = "container">
-				<div class = "row">
-					<div class = "col-md-12 col-sm-12 col-xs-12">
-							<h1 class = "main-cta title"> Portfolio </h1>
+		<nav id="navbar" class="">
+		  <div class="nav-wrapper">
+		    <div class="logo">
+		      <a href="index.html"><img src="img/Panda.png" style="height: 60px;"></a>
+		    </div>
+		    <ul id="menu">
+		      <li><a href="index.html">Home</a></li>
+					<li><a href="Projects.html">Portfolio</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="menuIcon">
+		  <span class="icon icon-bars"></span>
+		  <span class="icon icon-bars overlay"></span>
+		</div>
+
+		<div class="overlay-menu">
+		  <ul id="menu">
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="Projects.html">Portfolio</a></li>
+		      <li><a href="Contact.html">Contact</a></li>
+		    </ul>
+		</div>
+		<br>
+		<h1 class = "main-cta title"> Portfolio </h1>
+
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('illi')"> Illustrations</button>
+			<button class="btn" onclick="filterSelection('charsheet')"> Character Sheets</button>
+			<button class="btn" onclick="filterSelection('game')"> Game</button>
+		</div>
+
+		<div class = "flex-container">
+			<div class="column illi">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Pictoral/1S.png" style = "width: 300px;">
+							<figcaption>
+								<h2><span>Raven</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Pictoral/1L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column illi">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Pictoral/2S.png" style = "width: 300px;">
+							<figcaption>
+								<h2><span>Fox</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Pictoral/2L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column illi">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Pictoral/3S.png">
+							<figcaption>
+								<h2><span>Green-Eyes</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Pictoral/3L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column illi">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Pictoral/4S.png">
+							<figcaption>
+								<h2><span>Blue-Hair</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Pictoral/4L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column charsheet">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/CharSheet/1S.png">
+							<figcaption>
+								<h2><span>Monster Ball</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/CharSheet/1L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column charsheet">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/CharSheet/2S.png">
+							<figcaption>
+								<h2><span>Squidge</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/CharSheet/2L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column game">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Game/1S.png">
+							<figcaption>
+								<h2><span>Energy</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Game/1L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column game">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Game/2S.png">
+							<figcaption>
+								<h2><span>Space</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Game/2L.png"></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="column game">
+				<div class="content">
+					<div class="grid">
+						<figure class="effect-apollo port-img">
+							<img src="img/Game/3S.png">
+							<figcaption>
+								<h2><span>Speed</span></h2>
+								<p>Lorem ipsum dolor..</p>
+								<a href="#" data-featherlight="img/Game/3L.png"></a>
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class = "container">
-			<div class = "row">
-				<div class = "col-md-12 col-sm-12 col-xs-12">
-					<select id="soflow" data-bind="options: filters, value: filter"></select>
-				</div>
-			</div>
-		</div>
-		<div class = "container">
-			<ul data-bind="foreach: filteredItems" style="list-style: none;">
-				<li data-bind="template: { name: 'person-template', data: $data}, click: $root.finalPopup"></li>
-			</ul>
-		</div>
-
-		<div id="myModal" class="modal" data-bind="foreach: initialData"></div>
-
-		<script type="text/html" id="person-template">
-			<div class = "col-md-4 col-sm-6 col-xs-12">
-				<div class = "portfolio">
-						<img class="img-responsive rounded" data-bind="attr: {src : src}">
-						<div class= "over-text" data-bind="text: name" ></div>
-				</div>
-			</div>
-		</script>
-
-		<script type="text/html" id="modal">
-				<div class="modal-content">
-					<span class="close" onclick= "closeModal()">&times;</span>
-					<img class="img-responsive rounded imgModal" data-bind="attr: {src : src}">
-					<strong><h3 data-bind="text:name" style = "font-size: 20px;"></h3><strong>
-					<p style = "font-size: 15px;" data-bind="text:des"></p>
-					<a data-bind="attr: {href: url}" style = "font-size: 15px;">View on GitHub</a>
-				</div>
-		</script>
-
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
-		<script src="js/knockout-3.4.2.js" charset="utf-8"></script>
 		<script src="js/main.js" charset="utf-8"></script>
-		<script src="js/modal.js" charset="utf-8"></script>
-
+		<script src="js/nav.js" charset="utf-8"></script>
 	</body>
-
-	<footer class = "bottomColor">
-		<div class = "container ">
-			<div class = "row">
-				<div class = "col-md-6 col-sm-6 col-xs-6">
-					<h3 class = "bottom-cta">MY SOCIALS</h3>
-					<ul = class "social unstyled">
-						<li class = "social_li"><a href = "https://www.linkedin.com/mynetwork/"><img class="img-responsive smallIcon" src="img/link.png"></a></li>
-						<li class = "social_li"><a href = "https://github.com/jtvkw2"><img class="img-responsive smallIcon" src="img/git.svg"></a></li>
-					</ul>
-				</div>
-				<div class = "col-md-6 col-sm-6 col-xs-6 copyrightContainer">
-					<p class = "bottom-align-text bottom-cta">Jacob Voyles © 2018 </p>
-				</div>
-			</div>
-		</div>
-	</footer>
+</br>
+	<div class="container-fluid navbar-fixed-bottom" id="contact-bar">
+	  <ul class="list-inline text-center">
+	    <li>
+	      <a href="mailto:jvoylesdev@gmail.com"><i class="fa fa-envelope rotate"></i></a>
+	    </li>
+	    <li>
+	      <a href="https://github.com/jtvkw2"><i class="fa fa-github"></i></a>
+	    </li>
+	    <li>
+	      <a href="https://www.linkedin.com/in/jacob-voyles/"><i class="fa fa-linkedin-square"></i></a>
+	    </li>
+			<br>
+			<span class = "text-center main-cta">Jacob Voyles © 2018 </span>
+	  </ul>
+	</div>
 </html>

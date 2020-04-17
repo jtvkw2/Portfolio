@@ -1,56 +1,52 @@
+#contact {width:100%; height:100%; margin 0 auto;}
 
-.body {
-	width:576px;
-	margin:0 auto;
-	display:block;
-}
+.container {width:960px; height:auto; margin: 0 auto; padding: 50px 0;}
 
-form {
-	width: 100%;
-	padding: 5px;
-}
+#contact .container form input,
+#contact .container form textarea {
+	width:97.4%;
+	height:30px;
+	padding:5px 10px;
+	font-size: 12px;
+	color:#999;
+	letter-spacing:1px;
+	background: #FFF;
+	border:2px solid #A9A9A9;
+	margin-bottom:25px;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
 
-label {
-	display:block;
-	margin-top:20px;
-	letter-spacing:2px;
-}
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:2px solid #dd4545;
+	color:#999;}
 
-input, textarea {
-	width: 100%;
-	height:27px;
-	background:#efefef;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	margin-left: 10px;
-	margin-right: 10px;
-	font-size:0.9em;
-	color:#3a3a3a;
-}
+#contact .container form textarea {
+	height:150px;}
 
-	input:focus, textarea:focus {
-		border:1px solid #97d6eb;
-	}
+#contact .container form .submit {
+	width:100%;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:gray;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
 
-textarea {
-	height:213px;
-	font-family:Arial, Helvetica, sans-serif;
-	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
-}
+#contact .container form .submit:hover {
+	color:#FFF;
+	background: #484848;
+	cursor:pointer;}
 
-footer a img {
-	border:none;
-	float:right;
-	margin:0px 59px 40px 0px;
-}
-
-.formStyle{
-	display: inline-block;
-	 margin-left: auto;
-	 margin-right: auto;
-	 text-align: left;
-}
+#contact .container form .required {
+	color:#b43838;}
