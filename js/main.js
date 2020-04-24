@@ -1,5 +1,3 @@
-
-
 // **************** Portfolio Filtering ****************//
 
 filterSelection("all")
