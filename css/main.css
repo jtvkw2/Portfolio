@@ -409,9 +409,14 @@ body{
 Bubble Animation
 ************************************/
 .bubbles {
+<<<<<<< HEAD
   position: relative;
   display: block;
 	top: 60vh;
+=======
+	position: absolute;
+	top: 0;
+>>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -466,6 +471,7 @@ Bubble Animation
 	animation-delay: 5s;
 	animation-duration: 12s;
 }
+<<<<<<< HEAD
 
 .bubbles li:nth-child(6) {
 	width: 25px;
@@ -475,6 +481,17 @@ Bubble Animation
 	animation-duration: 11s;
 }
 
+=======
+
+.bubbles li:nth-child(6) {
+	width: 25px;
+	height: 25px;
+	left: 10%;
+	animation-delay: 3s;
+	animation-duration: 11s;
+}
+
+>>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 .bubbles li:nth-child(7) {
 	width: 55px;
 	height: 55px;
@@ -512,7 +529,11 @@ h1 {
 h2 {
 	font-size: 22px;
 	color: #ffffff;
+<<<<<<< HEAD
 	text-align: center;
+=======
+	text-align: left;
+>>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 }
 
 .container {
