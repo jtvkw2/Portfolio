@@ -290,6 +290,7 @@ a {
   height: 100vh;
   -webkit-transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
+  z-index: 2;
 }
 
 .overlay-menu ul, .overlay-menu li {

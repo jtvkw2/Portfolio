@@ -18,19 +18,26 @@ body{
 	z-index: 1;
 }
 
+
 .one-view{
   height: 100vh;
 }
-
+/*
 @font-face {
   font-family: "Alex_Brush";
   src: url("/fonts/AlexBrush-Regular.tff");
 }
-
+*/
 .navbarFont{
   font-size: 15px;
 }
 
+.imgStyle{
+  height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  z-index: 0;
+}
 
 .logo{
   border-radius: 100px;
@@ -402,8 +409,9 @@ body{
 Bubble Animation
 ************************************/
 .bubbles {
-	position: absolute;
-	top: 0;
+  position: relative;
+  display: block;
+	top: 60vh;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -504,7 +512,7 @@ h1 {
 h2 {
 	font-size: 22px;
 	color: #ffffff;
-	text-align: left;
+	text-align: center;
 }
 
 .container {
