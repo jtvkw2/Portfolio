@@ -48,7 +48,10 @@ document.body.onload = createDivs;
 function createDivs(){
   var portfolioArray = [
     ["html","img/Bugboy.png","Bug Boy in Water World", "https://github.com/jtvkw2/Bug_Boy_in_Water_World"],
-    ["mobile","img/Pitch.jpg","Pitch Perfect","https://github.com/jtvkw2/Pitch-Perfect"]
+    ["mobile","img/Pitch.jpg","Pitch Perfect","https://github.com/jtvkw2/Pitch-Perfect"],
+    ["html","img/List.png","To-Do-List","https://github.com/jtvkw2/To-Do-List"],
+    ["html","img/Map.png","Map","https://github.com/jtvkw2/Map"],
+    ["html","img/Memory.png","Memory","https://github.com/jtvkw2/Memory"]
   ];
   for(var i=0; i< portfolioArray.length; i++){
     addElement(portfolioArray[i][0],portfolioArray[i][1],portfolioArray[i][2],portfolioArray[i][3]);
@@ -75,6 +78,7 @@ function addElement (w,x,y,z) {
   var figcap = document.createElement("figcaption");
   figure.appendChild(figcap);
   var h2 = document.createElement("h2");
+  h2.classList.add("h2Style");
   figcap.appendChild(h2);
   var newContent = document.createTextNode(y);
   h2.appendChild(newContent);

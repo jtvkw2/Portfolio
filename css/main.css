@@ -8,26 +8,16 @@
 body{
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  background:  #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);;
+  background:  #C2DFE3;
   -webkit-animation: pulse 10s infinite;
 	animation: pulse 10s infinite;
 	z-index: 1;
 }
 
-
 .one-view{
   height: 100vh;
 }
-/*
-@font-face {
-  font-family: "Alex_Brush";
-  src: url("/fonts/AlexBrush-Regular.tff");
-}
-*/
+
 .navbarFont{
   font-size: 15px;
 }
@@ -43,6 +33,10 @@ body{
   border-radius: 100px;
   max-height: 45px;
   max-width: 45px;
+}
+
+.h2Style{
+  color: 253237;
 }
 
 .profile{
@@ -142,6 +136,7 @@ body{
     margin-bottom: 30px;
     cursor: default;
     color: #52504f;
+    z-index: 2;
 }
 
 .main-active{
@@ -409,14 +404,9 @@ body{
 Bubble Animation
 ************************************/
 .bubbles {
-<<<<<<< HEAD
   position: relative;
   display: block;
 	top: 60vh;
-=======
-	position: absolute;
-	top: 0;
->>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -428,10 +418,11 @@ Bubble Animation
 	position: absolute;
 	list-style: none;
 	display: block;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: #5C6B73;
 	bottom: -100px;
 	animation: circle 15s infinite;
 	transition-timing-function: linear;
+  z-index: 1;
 }
 
 .bubbles li:nth-child(1) {
@@ -471,7 +462,6 @@ Bubble Animation
 	animation-delay: 5s;
 	animation-duration: 12s;
 }
-<<<<<<< HEAD
 
 .bubbles li:nth-child(6) {
 	width: 25px;
@@ -481,17 +471,6 @@ Bubble Animation
 	animation-duration: 11s;
 }
 
-=======
-
-.bubbles li:nth-child(6) {
-	width: 25px;
-	height: 25px;
-	left: 10%;
-	animation-delay: 3s;
-	animation-duration: 11s;
-}
-
->>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 .bubbles li:nth-child(7) {
 	width: 55px;
 	height: 55px;
@@ -524,16 +503,6 @@ h1 {
 	font-size: 36px;
 	color: #ffffff;
 	text-align: left;
-}
-
-h2 {
-	font-size: 22px;
-	color: #ffffff;
-<<<<<<< HEAD
-	text-align: center;
-=======
-	text-align: left;
->>>>>>> d12e654d1214d60f94cfc109da045267a8933dc1
 }
 
 .container {
